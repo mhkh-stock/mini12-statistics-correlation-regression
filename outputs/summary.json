@@ -1,0 +1,77 @@
+{
+  "averages": {
+    "ad_spend_pkr": 293083.33,
+    "avg_discount_pct": 11.81,
+    "footfall": 5069.04,
+    "revenue_pkr": 5200733.33,
+    "units_sold": 610.38
+  },
+  "correlations": {
+    "ad_spend_pkr__avg_discount_pct": 0.1121,
+    "ad_spend_pkr__footfall": 0.9684,
+    "ad_spend_pkr__revenue_pkr": 0.8624,
+    "ad_spend_pkr__units_sold": 0.4116,
+    "avg_discount_pct__revenue_pkr": 0.1714,
+    "avg_discount_pct__units_sold": 0.6108,
+    "footfall__avg_discount_pct": 0.0763,
+    "footfall__revenue_pkr": 0.8247,
+    "footfall__units_sold": 0.3197,
+    "units_sold__revenue_pkr": 0.3395
+  },
+  "implied_avg_price_pkr": {
+    "max": 10935.0,
+    "mean": 8633.13,
+    "min": 6114.56
+  },
+  "key_correlations": {
+    "ad_spend_pkr__revenue_pkr": 0.8624,
+    "avg_discount_pct__footfall": 0.0763,
+    "avg_discount_pct__units_sold": 0.6108,
+    "footfall__revenue_pkr": 0.8247
+  },
+  "months": 24,
+  "notes": [
+    "Seeded generator (seed 131): r(ad, revenue) ~0.86, r(footfall, revenue) ~0.82 and r(discount, units) ~0.61 are planted; r(discount, footfall) ~0.08 is a deliberate near-zero control.",
+    "Revenue is not exactly units_sold x a fixed price; the implied average realised price varies (see implied_avg_price_pkr) because product mix and discount mix vary month to month.",
+    "p-values use the normal approximation to the t-distribution (math.erf); with n = 24 this is close for the large t-values here, and is stated as approximate, not exact."
+  ],
+  "pack": "Mini #12 \u2014 Statistics: Correlation & Regression Pack",
+  "period": "2024-01 to 2025-12",
+  "regression_revenue_on_ad_spend": {
+    "dependent": "revenue_pkr",
+    "independent": "ad_spend_pkr",
+    "intercept_pkr": 2109508.02,
+    "p_value_normal_approx": 1.33227e-15,
+    "r_squared": 0.7437,
+    "se_slope": 1.3201,
+    "slope_per_pkr_10000_ad_spend": 105473.0,
+    "slope_pkr_per_pkr": 10.5473,
+    "t_stat": 7.99
+  },
+  "regression_units_on_discount": {
+    "dependent": "units_sold",
+    "independent": "avg_discount_pct",
+    "intercept_units": 427.56,
+    "p_value_normal_approx": 0.000296359,
+    "r_squared": 0.3731,
+    "se_slope": 4.2787,
+    "slope_units_per_pct_point": 15.4822,
+    "t_stat": 3.62
+  },
+  "residual_diagnostics_revenue_on_ad_spend": {
+    "corr_residual_fitted": -0.0,
+    "durbin_watson": 1.8017,
+    "max_abs_standardised_residual": 1.827,
+    "mean_residual_pkr": -0.0,
+    "residual_sd_pkr": 418085.54
+  },
+  "shop": "Noor Electronics (Lahore) \u2014 fictional SAMPLE shop",
+  "spearman_ad_spend_revenue": 0.8615,
+  "status": "SAMPLE data, real statistics (stdlib only)",
+  "totals": {
+    "ad_spend_pkr": 7034000,
+    "footfall": 121657,
+    "revenue_pkr": 124817600,
+    "units_sold": 14649
+  }
+}

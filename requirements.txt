@@ -1,0 +1,5 @@
+# Mini #12 — no third-party dependencies.
+# Everything (Pearson r, Spearman rho, OLS regression, p-values,
+# residual diagnostics) is implemented from first principles with the
+# Python standard library only (csv, json, math, random, pathlib).
+# Python 3.8+ is enough; nothing to install.
