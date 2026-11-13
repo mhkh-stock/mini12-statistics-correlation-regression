@@ -1,6 +1,6 @@
 # Mini #12 — Statistics: Correlation & Regression Pack
 
-**Status:** built and verified locally; GitHub publish pending.
+**Status:** built, verified, and published on GitHub.
 
 **SAMPLE / DEMO data only.** Fictional shop, fictional months, fictional
 numbers. Never claimed as real client work.
@@ -130,4 +130,4 @@ determinism (see `outputs/summary.json`).
 
 ## Published
 
-Not yet published on GitHub — local build only.
+Published on GitHub: https://github.com/mhkh-stock/mini12-statistics-correlation-regression
